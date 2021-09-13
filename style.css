@@ -1,0 +1,466 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background: #C2E0DC;
+}
+.banner{
+	width: 100%;
+}
+.business-title{
+	width: 60%;
+	color: #4C7A81;
+	border-bottom: 3px #4C7A81 solid;
+	font-weight: 700;
+
+}
+.business-content{
+	width: 90%;
+	height: 70px;
+	border-radius: 10px;
+}
+.business-content h6{
+	font-weight: 600;
+	font-size: 16px;
+	width: 150px;
+	line-height: 1.8;
+}
+.business-content img{
+	width: 60px;
+	height: 60px;
+}
+.business-content a{
+	width: 100px;
+	height: 40px;
+	border-radius: 5px;
+	background: #053844;
+	color: #fff;
+	text-decoration: none;
+	line-height: 40px;
+	text-align: center;
+	font-weight: 600;
+
+}
+.business-nav{
+	width: 100%;
+	height: 60px;
+	background: rgba(240,240,240,1);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.business-nav i{
+	position: absolute;
+	top: 5px;
+	left: 20px;
+	font-size: 30px;
+	color: #000;
+}
+.business-nav h1{
+	font-size: 24px;
+	font-weight: 600;
+}
+footer .container p{
+	font-size: 14px;
+	font-weight: 700;
+}
+@media screen and (min-width: 768px){
+	.business-content{
+	height: 100px;
+}
+.business-content img{
+	width: 80px;
+	height: 80px;
+}
+.business-content h6{
+	font-size: 20px;
+	width:250px;
+}
+.business-content a{
+	width: 150px;
+	height: 50px;
+	line-height: 50px;
+}
+}
+
+
+/* 行動掛號 */
+
+.register-content .container .register-content-s{
+	width: 90%;
+	height: 320px;
+	border: 1px solid #ccc;
+	border-radius: 10px;
+	box-shadow: 3px 3px #ccc;
+	padding: 10px;;
+}
+.register-content .container h2{
+	color: #4B727C;
+	font-size: 20px;
+	font-weight: 600;
+}
+.register-content .container h5{
+	font-weight: 600;
+}
+.register-content .container p i{
+	color: #F1C40F;
+	font-size: 20px;
+	margin-right: 10px;
+}
+.register-content .container ul li{
+	font-size: 15px;
+	list-style-type: none;
+}
+.register-content .container table{
+	border: 1px #999 solid;
+	width: 100%;
+}
+.register-content .container table td{
+	border: 1px #999 solid;
+	text-align: center;
+	font-size: .9em;
+
+}
+.register-content .container table tr:nth-child(1){
+	background: #F5D579;
+}
+
+.register-content .container table td{
+	height: 80px;
+}
+.register-content .container table span{
+	color: #F0BE2E;
+	font-weight: 700;
+
+
+}
+
+.register-content .container .register-reserve{
+	width: 95%;
+	min-height: 500px;
+	height: auto;
+	border-radius: 10px;
+	border: #666 solid 1px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+}
+.register-content .container .register-reserve div{
+	width: 100%;
+	padding: 5px;
+}
+.register-content .container .register-reserve .register-data{
+	border-bottom: 1px #666 solid;
+	display: flex;
+	justify-content: space-between;
+}
+.register-content .container .register-reserve h3{
+	font-size: 18px;
+	font-weight: 600;
+	width: 100px;
+	text-align: left;
+	color: #333;
+}
+.register-content .container .register-reserve input{
+	border: none;
+	outline: none;
+	border-bottom: 1px #333 solid;
+	width: 70%;
+}
+.register-content .container .register-reserve input[type="radio"]{
+	opacity:1;
+	position: absolute;
+	top: 0;
+	left: -100000000000px;
+}
+.register-content .container .register-reserve input[type="radio"]:disabled~label{
+	background: #ddd;
+	cursor: context-menu;
+
+}
+.register-content .container .register-reserve .register-data{
+	position: relative;
+}
+
+.register-content .container .register-reserve .register-data label{
+	width: 105px;
+	height: 60px;
+	border: 1px #000 solid;
+	text-align: center;
+	line-height: 1.7;
+	position: relative;
+	cursor: pointer;
+	font-size:.7em;
+	padding-top: 5px;
+}
+.register-data-click{
+	border: 1px #1E98D7 solid;
+}
+.register-check{
+	position: absolute;
+	top: 0;
+	right: 0;
+	color: #fff;
+	width: 20px;
+	height: 20px;
+	background: #1E98D7;
+	opacity: 0;
+}
+
+#register-time1:checked~#register-label1,
+#register-time2:checked~#register-label2,
+#register-time3:checked~#register-label3,
+#register-doctor1:checked~#register-label4,
+#register-doctor2:checked~#register-label5,
+#register-doctor3:checked~#register-label6{
+	border: 1px #1E98D7 solid;
+
+}
+#register-time1:checked~#register-label1 i,
+#register-time2:checked~#register-label2 i,
+#register-time3:checked~#register-label3 i,
+#register-doctor1:checked~#register-label4 i,
+#register-doctor2:checked~#register-label5 i,
+#register-doctor3:checked~#register-label6 i{
+	opacity: 1;
+}
+.register-btn{
+	width: 150px;
+	height: 40px;
+	border-radius: 5px;
+	color: #fff;
+	background: #FF7B06;
+	text-decoration: none;
+	text-align: center;
+	line-height: 40px;
+	margin-top: 30px;
+	font-size: 18px;
+}
+.register-btn:focus{
+	color: #fff;
+}
+.register-week input[type="week"]{
+	border: #4FAFE0 3px solid;
+	border-radius: 5px;
+	padding: 10px;
+	height: 35px;
+}
+@media screen and (min-width:1024px){
+	.register-content .container .register-reserve .register-data label{
+		width: 200px;
+		height: 100px;
+		border: 1px #000 solid;
+		text-align: center;
+		line-height: 1.7;
+		position: relative;
+		cursor: pointer;
+		font-size:1.1em;
+		padding-top: 15px;;
+	}
+}
+/* 掛號完成頁 */
+.finish-content{
+	width: 100%;
+	height: 300px;
+	border-radius: 10px;
+	background: rgba(240, 240, 240, 1.0);
+	box-shadow: 5px 5px #ddd;
+}
+.finish-content h5{
+	font-weight: 600;
+	width: 150px;
+}
+.register-finish h5{
+	font-weight: 600;
+}
+.finish-btn{
+	width: 150px;
+	height: 40px;
+	border-radius: 5px;
+	color: #fff;
+	background: #FF7B06;
+	text-decoration: none;
+	text-align: center;
+	line-height: 40px;
+	margin-top: 30px;
+	font-size: 18px;
+}
+.finish-btn:focus{
+	color: #fff;
+}
+.finish-img{
+	width: 100px;
+}
+.register-num{
+	font-size: 80px;
+	font-weight: 600;
+}
+/* 繳費紀錄頁 */
+.record-btn{
+	width: 100px;
+	height: 30px;
+	border-radius: 5px;
+	color: #fff;
+	background: #FF7B06;
+	text-align: center;
+	line-height: 30px;
+	text-decoration: none;
+	outline: none;
+	border: none;
+}
+.record-btn-finish{
+	width: 100px;
+	height: 30px;
+	border-radius: 5px;
+	color: #ddd;
+	background: #666;
+	text-align: center;
+	line-height: 30px;
+	text-decoration: none;
+	outline: none;
+	border: none;
+}
+.record-btn-finish:focus{
+	color: #ddd;
+}
+.payrecord-cnetent{
+	width: 90%;
+	padding: 10px;
+	padding-left: 30px;
+	border-bottom: 1px #aaa solid;
+	cursor: pointer;
+}
+.payrecord-cnetent h3{
+	font-size: 18px;
+	font-weight: 600;
+	margin-right: 15px;
+}
+/* 付款頁 */
+.pay h1{
+	color: #13608B;
+	font-weight: 600;
+}
+.pay-content{
+	width: 100%;
+	height: 200px;
+	border: 1px #999 solid;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.pay-content h2{
+	width: 120px;
+	font-size: 18px;
+}
+.pay-content  input{
+	width: 80%;
+}
+.pay-btn{
+	width: 150px;
+	height: 40px;
+	border-radius: 5px;
+	color: #fff;
+	background: #FF7B06;
+	text-decoration: none;
+	text-align: center;
+	line-height: 40px;
+	margin-top: 30px;
+	font-size: 18px;
+}
+.pay-btn:focus{
+	color: #fff;
+}
+
+
+/* 資訊查看頁 */
+.info-content{
+	width: 100%;
+	border: 1px #ccc solid;
+	height: 130px;
+	text-decoration: none;
+	box-shadow: 5px 5px  10px #ccc;
+	padding-left: 30px;
+}
+
+.info-content img{
+	width: 70px;
+	height: auto;
+	margin-right: 30px;
+}
+.info-content h3{
+	color: #000;
+	font-weight: 600;
+	font-size: 24px;
+	border-bottom: 4px solid #5687E6;
+}
+.info-content h4{
+	color: #000;
+	font-weight: 600;
+	font-size: 24px;
+	border-bottom: 4px solid #FF7B06;
+}
+
+/* 付款資訊頁 */
+.pay-info-content{
+	width: 100%;
+	border: 1px #ccc solid;
+	height: 400px;
+	box-shadow: 5px 5px 5px #ccc;
+}
+.pay-info-content h1{
+	font-size: 20px;
+	font-weight: 600;
+	margin-bottom: 10px;
+}
+.pay-info-content h2{
+	background: #C2E5F9;
+	box-sizing: border-box;
+	padding:5px;
+	font-size: 20px;
+	font-weight: 600;
+	margin-bottom: 20px;
+}
+.pay-info-content i{
+	color:#6EBFEC ;
+	font-size: 30px;
+	margin-right: 10px;
+}
+.pay-info-content div{
+	display: flex;
+	margin-bottom: 20px;
+}
+.pay-info-content h3{
+	width: 100px;
+	font-weight: 600;
+}
+.pay-info-content input{
+	width: 200px;
+}
+.card-date{
+	width: 50px;
+}
+.pay-info-btn{
+	width: 150px;
+	height: 40px;
+	border-radius: 5px;
+	color: #fff;
+	background: #FF7B06;
+	text-decoration: none;
+	text-align: center;
+	line-height: 40px;
+	margin-top: 30px;
+	font-size: 18px;
+}
+/* 付款完成頁 */
+.register-finish table{
+	border: 1px #000 solid;
+	width: 100%;
+}
+.register-finish table td{
+	border: 1px #000 solid;
+	padding: 10px;
+}
